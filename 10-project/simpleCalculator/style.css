@@ -10,7 +10,7 @@ body {
   align-items: center;
 }
 .container {
-  padding: 20px;
+  padding: 30px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -43,6 +43,8 @@ body {
 
 input {
   padding: 8px;
+  border-radius: 6px;
+  border:1px solid rgb(199, 197, 197);
 }
 
 .btn-div {
@@ -62,6 +64,11 @@ input {
   color: white;
   border: 0;
   border-radius: 8px;
+}
+
+.btn-div span{
+  font-size: large;
+  font-weight: bolder;
 }
 
 .result-div {
