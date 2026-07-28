@@ -32,16 +32,18 @@
       </div>
 
       <div class="btn-div">
-        <button><span>+</span> Add</button>
-        <button><span>-</span> Substract</button>
-        <button><span>X</span> Multiply</button>
-        <button><span>/</span> Divide</button>
+        <button onclick="calculate('+')"><span>+</span> Add</button>
+        <button onclick="calculate('-')"><span>-</span> Substract</button>
+        <button onclick="calculate('x')"><span>X</span> Multiply</button>
+        <button onclick="calculate('/')"><span>/</span> Divide</button>
       </div>
 
       <div class="result-div">
         <label for="result">Result</label>
         <span id="result">0</span>
       </div>
+
+      <button onclick="clearData()" id="btn-clear">Clear</button>
     </div>
     <script src="script.js"></script>
   </body>

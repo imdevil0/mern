@@ -87,3 +87,12 @@ input {
   font-weight: bold;
   border: 1px solid #cddefc;
 }
+
+
+#btn-clear{
+  background-color: rgb(219, 79, 79);
+  padding: 16px;
+  border: 0;
+  border-radius: 10px;
+  color: white;
+}
