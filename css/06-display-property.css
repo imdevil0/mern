@@ -1,0 +1,45 @@
+/**
+ * !Topic: The Display Property
+ * 
+ * ?Introduction:
+ *  * The display property specifies if/how an element is displayed. The most common are block, inline, inline-block, and none.
+ * Analogy: 
+ *  - Block: Standing in line, one behind the other.
+ *  - Inline: Holding hands, standing side-by-side.
+ *  - None: Hiding in the closet.
+ * 
+ * ?Why do we use it?
+ *  * It dictates the document flow and how elements interact with each other in the layout.
+ * 
+ * ?Syntax:
+ *  * display: value;
+ */
+
+/* --- Basic Example --- */
+.block-element {
+  /* Takes up full width, starts on new line */
+  display: block; 
+}
+
+.inline-element {
+  /* Only takes up necessary width, no new line. Width/height are ignored! */
+  display: inline; 
+}
+
+.inline-block-element {
+  /* Side-by-side like inline, but respects width/height/margin like block */
+  display: inline-block;
+  width: 100px;
+}
+
+.hidden-element {
+  /* Removes element completely from the document flow (invisible) */
+  display: none;
+}
+
+/* --- Write Your Notes/Observations Below --- */
+
+/* --- Questions / Exercises for Practice --- */
+/* Question 1: How do you make list items (<li>) display side-by-side horizontally? */
+/* Write your solution here: */
+

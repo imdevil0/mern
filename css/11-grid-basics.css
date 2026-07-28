@@ -1,0 +1,39 @@
+/**
+ * !Topic: CSS Grid Basics
+ * 
+ * ?Introduction:
+ *  * CSS Grid Layout is a two-dimensional layout system. It handles both columns and rows.
+ * Analogy: Like a chessboard or an Excel spreadsheet where you can place items into specific cells or make them span multiple cells.
+ * 
+ * ?Why do we use it?
+ *  * Flexbox is for one direction (a single row OR column). Grid is for complex whole-page layouts involving BOTH rows and columns.
+ * 
+ * ?Syntax:
+ *  * display: grid;
+ */
+
+/* --- Basic Example --- */
+.grid-container {
+  display: grid;
+  
+  /* Defines 3 columns: 200px, flexible middle, 200px */
+  grid-template-columns: 200px 1fr 200px;
+  
+  /* Defines 2 rows: 100px each */
+  grid-template-rows: 100px 100px;
+  
+  /* Creates space between grid items (gap) */
+  gap: 20px; 
+}
+
+.grid-item {
+  background-color: lightblue;
+  padding: 20px;
+}
+
+/* --- Write Your Notes/Observations Below --- */
+
+/* --- Questions / Exercises for Practice --- */
+/* Question 1: Create a grid container with 4 equally sized columns. */
+/* Write your solution here: */
+

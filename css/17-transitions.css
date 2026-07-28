@@ -1,0 +1,35 @@
+/**
+ * !Topic: CSS Transitions
+ * 
+ * ?Introduction:
+ *  * Transitions allow you to change property values smoothly (from one value to another) over a given duration.
+ * Analogy: A dimmer switch for a light instead of a basic on/off switch.
+ * 
+ * ?Why do we use it?
+ *  * To make interactions (like hover states) feel smooth, polished, and natural, rather than jarring and instantaneous.
+ * 
+ * ?Syntax:
+ *  * transition: property duration timing-function delay;
+ */
+
+/* --- Basic Example --- */
+.card {
+  background-color: white;
+  transform: translateY(0);
+  
+  /* Animate the background-color and transform properties over 0.3 seconds smoothly (ease-in-out) */
+  transition: background-color 0.3s ease, transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  background-color: lightgray;
+  /* Moves the card up slightly on hover */
+  transform: translateY(-5px); 
+}
+
+/* --- Write Your Notes/Observations Below --- */
+
+/* --- Questions / Exercises for Practice --- */
+/* Question 1: Write a transition that makes a button's width expand from 100px to 150px over 1 second when hovered. */
+/* Write your solution here: */
+

@@ -1,0 +1,47 @@
+/**
+ * !Topic: Advanced Grid Layouts
+ * 
+ * ?Introduction:
+ *  * With Grid, you can explicitly place items into specific rows/columns, or have them span across multiple tracks.
+ * Analogy: Merging cells in Excel to make a large header area that spans across 3 columns.
+ * 
+ * ?Why do we use it?
+ *  * To create asymmetrical layouts, complex galleries, or standard application shells (header, sidebar, content, footer).
+ * 
+ * ?Syntax:
+ *  * grid-column: start / end;
+ */
+
+/* --- Basic Example --- */
+.layout-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr; /* Sidebar, Main Content */
+  gap: 10px;
+}
+
+.header {
+  /* Span from column line 1 to column line 3 (covers the whole top) */
+  grid-column: 1 / 3;
+  background-color: darkblue;
+}
+
+.sidebar {
+  /* Implicitly goes into column 1 */
+  background-color: lightgrey;
+}
+
+.main-content {
+  /* Implicitly goes into column 2 */
+  background-color: white;
+}
+
+.footer {
+  grid-column: 1 / span 2; /* Alternative way to span 2 columns */
+}
+
+/* --- Write Your Notes/Observations Below --- */
+
+/* --- Questions / Exercises for Practice --- */
+/* Question 1: Make a grid item span across 3 rows. */
+/* Write your solution here: */
+

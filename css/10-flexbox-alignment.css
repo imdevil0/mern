@@ -1,0 +1,39 @@
+/**
+ * !Topic: Flexbox Alignment
+ * 
+ * ?Introduction:
+ *  * Flexbox provides powerful alignment properties: justify-content (main axis) and align-items (cross axis).
+ * Analogy: Organizing items on a shelf. Do you want them grouped in the center, spread out evenly, or pushed to the sides?
+ * 
+ * ?Why do we use it?
+ *  * To perfectly align elements, solve the "how do I vertically center a div" problem, and distribute empty space.
+ * 
+ * ?Syntax:
+ *  * justify-content: center; align-items: center;
+ */
+
+/* --- Basic Example --- */
+.nav-bar {
+  display: flex;
+  
+  /* MAIN AXIS (horizontal if flex-direction is row): */
+  justify-content: space-between; /* space-between, space-around, center, flex-start, flex-end */
+  
+  /* CROSS AXIS (vertical if flex-direction is row): */
+  align-items: center; /* center, flex-start, flex-end, stretch */
+}
+
+/* The ultimate "center everything perfectly" trick */
+.perfect-center {
+  display: flex;
+  justify-content: center; /* Horizontally centered */
+  align-items: center;     /* Vertically centered */
+  height: 100vh;           /* Take full viewport height */
+}
+
+/* --- Write Your Notes/Observations Below --- */
+
+/* --- Questions / Exercises for Practice --- */
+/* Question 1: Center items vertically, but push them all to the far right horizontally. */
+/* Write your solution here: */
+

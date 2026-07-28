@@ -1,0 +1,49 @@
+/**
+ * !Topic: CSS Animations
+ * 
+ * ?Introduction:
+ *  * Animations allow you to animate transitions from one CSS style configuration to another, using multiple steps (@keyframes).
+ * Analogy: A flipbook. You define key frames (start, middle, end) and CSS draws the frames in between.
+ * 
+ * ?Why do we use it?
+ *  * For complex movements that cannot be achieved with simple hover transitions (e.g., loading spinners, bouncing elements).
+ * 
+ * ?Syntax:
+ *  * @keyframes name { ... }
+ *  * animation: name duration timing-function delay iteration-count direction;
+ */
+
+/* --- Basic Example --- */
+/* 1. Define the animation steps */
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%); /* Starts off-screen left */
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0); /* Ends at normal position */
+    opacity: 1;
+  }
+}
+
+/* 2. Apply the animation to an element */
+.animated-box {
+  /* Runs the 'slideIn' animation over 1 second, smoothly, once */
+  animation: slideIn 1s ease-out forwards;
+}
+
+/* A continuous spinning loading ring */
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.loader {
+  animation: spin 2s linear infinite; /* infinite loops it forever */
+}
+
+/* --- Write Your Notes/Observations Below --- */
+
+/* --- Questions / Exercises for Practice --- */
+/* Question 1: Create an @keyframes animation that makes an element pulse (scale up and down). */
+/* Write your solution here: */
+

@@ -1,0 +1,38 @@
+/**
+ * !Topic: Colors and Backgrounds
+ * 
+ * ?Introduction:
+ *  * CSS allows you to define text color (color) and background styles (background-color, background-image).
+ * Analogy: Choosing the paint color for your walls (background) and the color of your furniture (text).
+ * 
+ * ?Why do we use it?
+ *  * Color is essential for branding, readability, and aesthetics.
+ * 
+ * ?Syntax:
+ *  * color: value; (Keywords, HEX, RGB, HSL)
+ */
+
+/* --- Basic Example --- */
+body {
+  /* Using HEX color code for background */
+  background-color: #f4f4f4;
+  /* Using RGB for text color */
+  color: rgb(51, 51, 51);
+}
+
+.hero-section {
+  /* Background image with cover sizing */
+  background-image: url('hero.jpg');
+  background-size: cover;
+  background-position: center;
+  /* Using RGBA for semi-transparent background color */
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white; /* Keyword color */
+}
+
+/* --- Write Your Notes/Observations Below --- */
+
+/* --- Questions / Exercises for Practice --- */
+/* Question 1: Apply a tomato color background to a class named "alert". */
+/* Write your solution here: */
+

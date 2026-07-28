@@ -1,0 +1,43 @@
+/**
+ * !Topic: CSS Selectors
+ * 
+ * ?Introduction:
+ *  * Selectors are used to "find" (or select) the HTML elements you want to style.
+ * Analogy: Like addressing a letter. You can address it to everyone in a city (tag selector), people on a specific street (class), or one specific person (ID).
+ * 
+ * ?Why do we use it?
+ *  * To apply styles to specific elements without affecting others.
+ * 
+ * ?Syntax:
+ *  * Tag: p { ... }
+ *  * Class: .class-name { ... }
+ *  * ID: #id-name { ... }
+ */
+
+/* --- Basic Example --- */
+/* Element/Tag Selector */
+p {
+  line-height: 1.5;
+}
+
+/* Class Selector (Prefix with a dot .) */
+.highlight {
+  background-color: yellow;
+}
+
+/* ID Selector (Prefix with a hash #, should be unique) */
+#main-heading {
+  font-size: 2rem;
+}
+
+/* Grouping Selector */
+h1, h2, h3 {
+  font-family: Arial, sans-serif;
+}
+
+/* --- Write Your Notes/Observations Below --- */
+
+/* --- Questions / Exercises for Practice --- */
+/* Question 1: Write a selector to target an element with the class "btn-primary" and make its background blue. */
+/* Write your solution here: */
+

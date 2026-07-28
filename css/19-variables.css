@@ -1,0 +1,45 @@
+/**
+ * !Topic: CSS Variables (Custom Properties)
+ * 
+ * ?Introduction:
+ *  * CSS Variables allow you to store values (like colors or sizes) in a central place and reuse them throughout your stylesheet.
+ * Analogy: Saving a phone number to a contact name. If the number changes, you update the contact once, and it updates everywhere you call them.
+ * 
+ * ?Why do we use it?
+ *  * For easy maintenance, theming (like Dark Mode/Light Mode), and keeping consistent design tokens.
+ * 
+ * ?Syntax:
+ *  * Definition: --variable-name: value; (usually on :root)
+ *  * Usage: var(--variable-name)
+ */
+
+/* --- Basic Example --- */
+/* Define variables globally on the root element */
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --main-font-size: 16px;
+  --spacing-unit: 8px;
+}
+
+/* Use the variables */
+body {
+  font-size: var(--main-font-size);
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  padding: calc(var(--spacing-unit) * 2); /* calc() can do math with variables */
+  color: white;
+}
+
+.text-highlight {
+  color: var(--secondary-color);
+}
+
+/* --- Write Your Notes/Observations Below --- */
+
+/* --- Questions / Exercises for Practice --- */
+/* Question 1: Define a variable for a border-radius of 5px and apply it to an image class. */
+/* Write your solution here: */
+

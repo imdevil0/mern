@@ -1,0 +1,36 @@
+/**
+ * !Topic: Flexbox Basics
+ * 
+ * ?Introduction:
+ *  * Flexbox (Flexible Box Layout) is a one-dimensional layout method for laying out items in rows or columns.
+ * Analogy: Like a rubber band wrapping around items. As the container stretches or shrinks, the items inside adjust their size and spacing smoothly.
+ * 
+ * ?Why do we use it?
+ *  * It makes building complex, responsive layouts infinitely easier than floats or positioning. It easily centers elements vertically and horizontally.
+ * 
+ * ?Syntax:
+ *  * display: flex; (applied to the parent container)
+ */
+
+/* --- Basic Example --- */
+.flex-container {
+  display: flex; /* Enables flexbox for direct children */
+  
+  /* flex-direction defines the main axis (row is default) */
+  flex-direction: row; /* row, row-reverse, column, column-reverse */
+  
+  /* flex-wrap controls if items wrap to a new line when out of space */
+  flex-wrap: wrap; 
+}
+
+.flex-item {
+  /* flex shorthand: flex-grow flex-shrink flex-basis */
+  flex: 1; /* Allows item to grow and shrink equally */
+}
+
+/* --- Write Your Notes/Observations Below --- */
+
+/* --- Questions / Exercises for Practice --- */
+/* Question 1: Create a flex container that stacks its children vertically instead of horizontally. */
+/* Write your solution here: */
+

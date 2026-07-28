@@ -1,0 +1,47 @@
+/**
+ * !Topic: CSS Positioning
+ * 
+ * ?Introduction:
+ *  * The position property specifies the type of positioning method used for an element (static, relative, absolute, fixed, or sticky).
+ * Analogy: 
+ *  - Static: Normal place in line.
+ *  - Relative: Shifting slightly out of line, leaving an empty space behind.
+ *  - Absolute: Floating above everything, relative to the room (container).
+ *  - Fixed: Glued to the camera lens (screen).
+ * 
+ * ?Why do we use it?
+ *  * To break out of the normal document flow and place elements exactly where we want them.
+ * 
+ * ?Syntax:
+ *  * position: value; top: 10px; left: 10px;
+ */
+
+/* --- Basic Example --- */
+.relative-box {
+  position: relative;
+  top: 20px; /* Moves 20px down from its normal position */
+  left: 10px; /* Moves 10px right from its normal position */
+}
+
+.container {
+  position: relative; /* Acts as the anchor for the absolute child */
+}
+
+.absolute-box {
+  position: absolute;
+  top: 0;
+  right: 0; /* Positions perfectly at the top-right of the .container */
+}
+
+.fixed-nav {
+  position: fixed;
+  top: 0;
+  width: 100%; /* Stays at top of screen even when scrolling */
+}
+
+/* --- Write Your Notes/Observations Below --- */
+
+/* --- Questions / Exercises for Practice --- */
+/* Question 1: Make a "Back to Top" button stay in the bottom-right corner of the screen permanently. */
+/* Write your solution here: */
+

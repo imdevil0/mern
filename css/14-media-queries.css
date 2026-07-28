@@ -1,0 +1,47 @@
+/**
+ * !Topic: Media Queries
+ * 
+ * ?Introduction:
+ *  * Media queries allow you to apply CSS only when specific conditions are true (usually screen width).
+ * Analogy: "IF the screen is smaller than an iPad, THEN apply these rules."
+ * 
+ * ?Why do we use it?
+ *  * It is the core technology behind responsive design. We usually design "Mobile First" (default rules for mobile, media queries for larger screens).
+ * 
+ * ?Syntax:
+ *  * @media (condition) { /* rules */ }
+ */
+
+/* --- Basic Example --- */
+
+/* MOBILE FIRST: Default styles apply to small screens */
+body {
+  font-size: 14px;
+}
+.sidebar {
+  display: none; /* Hidden on mobile */
+}
+
+/* TABLET AND UP: If screen is 768px or wider, apply these: */
+@media (min-width: 768px) {
+  body {
+    font-size: 16px; /* Larger font for larger screens */
+  }
+  .sidebar {
+    display: block; /* Show sidebar on tablet/desktop */
+  }
+}
+
+/* DESKTOP AND UP: If screen is 1024px or wider... */
+@media (min-width: 1024px) {
+  .container {
+    display: flex; /* Switch to a complex flex layout on desktop */
+  }
+}
+
+/* --- Write Your Notes/Observations Below --- */
+
+/* --- Questions / Exercises for Practice --- */
+/* Question 1: Write a media query that changes the background color to blue only on screens smaller than 600px. */
+/* Write your solution here: */
+

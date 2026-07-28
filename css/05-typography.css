@@ -1,0 +1,36 @@
+/**
+ * !Topic: Typography
+ * 
+ * ?Introduction:
+ *  * CSS provides many properties to style text, such as font family, size, weight, and alignment.
+ * Analogy: Choosing the handwriting style and pen thickness for an invitation.
+ * 
+ * ?Why do we use it?
+ *  * Good typography makes text readable and visually appealing.
+ * 
+ * ?Syntax:
+ *  * font-family: "Font Name", fallback-font;
+ */
+
+/* --- Basic Example --- */
+body {
+  /* Prefer Helvetica/Arial, fallback to default sans-serif */
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6; /* Spacing between lines */
+}
+
+h1 {
+  font-size: 2.5rem; /* Relative size based on root font size */
+  font-weight: 700;  /* Boldness (400 is normal, 700 is bold) */
+  text-align: center; /* Left, right, center, justify */
+  text-transform: uppercase; /* Changes text to UPPERCASE */
+  letter-spacing: 2px; /* Space between characters */
+}
+
+/* --- Write Your Notes/Observations Below --- */
+
+/* --- Questions / Exercises for Practice --- */
+/* Question 1: Write a rule for <p> that makes text italic, 18px size, and justified. */
+/* Write your solution here: */
+

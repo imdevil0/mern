@@ -1,0 +1,42 @@
+/**
+ * !Topic: CSS Best Practices
+ * 
+ * ?Introduction:
+ *  * As projects grow, CSS can become a messy, unmaintainable tangled web. Best practices help prevent this.
+ * Analogy: Keeping your toolkit organized so you don't spend an hour looking for a screwdriver.
+ * 
+ * ?Why do we use it?
+ *  * To write CSS that is scalable, easy to read for teammates, and performs well in the browser.
+ * 
+ * ?Concepts:
+ *  * 1. DRY Principle: Don't Repeat Yourself. Use utility classes or variables instead of repeating hex codes.
+ *  * 2. Avoid !important: It breaks the cascade and makes debugging a nightmare.
+ *  * 3. Naming Conventions (BEM): Block Element Modifier (e.g., .card, .card__title, .card--dark).
+ *  * 4. Keep specificity low: Try to use class selectors instead of deeply nested tags (div > ul > li > a).
+ */
+
+/* --- Basic Example --- */
+/* BAD PRACTICE: High specificity, repetitive, magic numbers */
+#header nav ul li a.active {
+  color: #ff0000 !important;
+}
+
+/* GOOD PRACTICE: BEM methodology, low specificity */
+.nav__link--active {
+  color: var(--accent-color);
+}
+
+/* Utility class for reusing common styles */
+.text-center {
+  text-align: center;
+}
+.margin-bottom-sm {
+  margin-bottom: 10px;
+}
+
+/* --- Write Your Notes/Observations Below --- */
+
+/* --- Questions / Exercises for Practice --- */
+/* Question 1: What is the downside of using !important in your CSS rules? */
+/* Write your solution here: */
+

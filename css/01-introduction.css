@@ -1,0 +1,27 @@
+/**
+ * !Topic: Introduction to CSS
+ * 
+ * ?Introduction:
+ *  * CSS (Cascading Style Sheets) is used to style and layout web pages (e.g., fonts, colors, spacing).
+ * Analogy: If HTML is the brick and mortar of a house, CSS is the paint, the interior design, and the landscaping.
+ * 
+ * ?Why do we use it?
+ *  * Without CSS, websites would be plain text on white backgrounds. CSS brings web pages to life.
+ * 
+ * ?Syntax:
+ *  * selector { property: value; }
+ */
+
+/* --- Basic Example --- */
+/* This targets all <h1> elements and changes their color to blue */
+h1 {
+  color: blue;
+  text-align: center;
+}
+
+/* --- Write Your Notes/Observations Below --- */
+
+/* --- Questions / Exercises for Practice --- */
+/* Question 1: Write a CSS rule that changes the text color of all paragraphs to red. */
+/* Write your solution here: */
+

@@ -1,0 +1,45 @@
+/**
+ * !Topic: Pseudo-classes
+ * 
+ * ?Introduction:
+ *  * A pseudo-class is used to define a special state of an element. (e.g., when a user hovers over a button, or when an input is in focus).
+ * Analogy: A chameleon changing color depending on its environment/state.
+ * 
+ * ?Why do we use it?
+ *  * To add interactivity and feedback to users without needing JavaScript.
+ * 
+ * ?Syntax:
+ *  * selector:pseudo-class { ... }
+ */
+
+/* --- Basic Example --- */
+/* :hover - Applied when the user hovers the mouse over the element */
+button {
+  background-color: blue;
+  color: white;
+}
+button:hover {
+  background-color: darkblue; /* Darkens on hover */
+  cursor: pointer;
+}
+
+/* :focus - Applied when an input field is clicked/selected */
+input {
+  border: 1px solid gray;
+}
+input:focus {
+  border: 2px solid blue;
+  outline: none;
+}
+
+/* :nth-child - Selects specific elements based on order */
+li:nth-child(even) {
+  background-color: #f2f2f2; /* Striped table/list effect */
+}
+
+/* --- Write Your Notes/Observations Below --- */
+
+/* --- Questions / Exercises for Practice --- */
+/* Question 1: Style a link (<a> tag) so that it turns red when visited (:visited). */
+/* Write your solution here: */
+

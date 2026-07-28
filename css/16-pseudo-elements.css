@@ -1,0 +1,41 @@
+/**
+ * !Topic: Pseudo-elements
+ * 
+ * ?Introduction:
+ *  * A pseudo-element is used to style specific parts of an element, or to insert content before/after an element.
+ * Analogy: Adding an attachment or accessory to an existing item without physically altering the HTML.
+ * 
+ * ?Why do we use it?
+ *  * For decorative elements, styling the first letter of a paragraph, or injecting icons without polluting the HTML with extra <span> tags.
+ * 
+ * ?Syntax:
+ *  * selector::pseudo-element { ... }
+ */
+
+/* --- Basic Example --- */
+/* ::first-letter - Styles only the first letter (like in old books) */
+p::first-letter {
+  font-size: 200%;
+  font-weight: bold;
+  color: red;
+}
+
+/* ::before and ::after - Inserts content before/after the element */
+/* MUST include the 'content' property! */
+.required-field::after {
+  content: " *";
+  color: red;
+}
+
+.quote::before {
+  content: '"'; /* Adds quotation marks via CSS */
+  font-size: 1.5rem;
+  color: gray;
+}
+
+/* --- Write Your Notes/Observations Below --- */
+
+/* --- Questions / Exercises for Practice --- */
+/* Question 1: Use ::before to add an arrow icon (→) before all elements with the class 'link-item'. */
+/* Write your solution here: */
+

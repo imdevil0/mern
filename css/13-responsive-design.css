@@ -1,0 +1,36 @@
+/**
+ * !Topic: Responsive Design Principles
+ * 
+ * ?Introduction:
+ *  * Responsive Web Design ensures your website looks good on all devices (desktops, tablets, and phones).
+ * Analogy: Water takes the shape of whatever container you pour it into. Your website should adapt to the screen it's poured into.
+ * 
+ * ?Why do we use it?
+ *  * Most web traffic comes from mobile devices today. A static desktop site is unreadable on a phone.
+ * 
+ * ?Concepts:
+ *  * 1. Fluid Grids (using %, vw, vh instead of fixed px)
+ *  * 2. Flexible Images (max-width: 100%)
+ *  * 3. Media Queries (changing layout based on screen width)
+ */
+
+/* --- Basic Example --- */
+/* 1. Flexible Images */
+img {
+  max-width: 100%; /* Image will scale down if container is smaller */
+  height: auto;    /* Maintains aspect ratio */
+}
+
+/* 2. Fluid Layout using Flexbox/Grid and Relative Units */
+.container {
+  width: 90%;      /* Takes up 90% of screen, not a fixed pixel width */
+  max-width: 1200px; /* But stops growing at 1200px */
+  margin: 0 auto;  /* Centers the container */
+}
+
+/* --- Write Your Notes/Observations Below --- */
+
+/* --- Questions / Exercises for Practice --- */
+/* Question 1: Why is using 'width: 100%' on an image potentially worse than 'max-width: 100%'? */
+/* Write your solution here: */
+
