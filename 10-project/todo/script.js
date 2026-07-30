@@ -119,7 +119,7 @@ function generateLi(task) {
       onchange="updateTask(${task.id})"
     />
 
-    <span>${task.title}</span>
+    <span class="${task.completed ? 'task-completed' : ''}">${task.title}</span>
 
     <button onclick="onDelete(${task.id})">
       <svg

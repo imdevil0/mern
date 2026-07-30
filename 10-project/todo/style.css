@@ -133,6 +133,11 @@ ul {
   color: white;
 }
 
+.task-completed{
+  text-decoration: line-through;
+  color: #888;
+}
+
 button {
   cursor: pointer;
 }
