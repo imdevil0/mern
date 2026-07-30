@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  width: 70vw;
+  max-width: 600px;
+  overflow: hidden;
+  max-height: 90vh;
+}
+
+.heading {
+  background-color: #4a62e0;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+
+  span {
+    font-size: small;
+  }
+}
+
+.input-div {
+  margin: 16px 0px;
+  padding: 0px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+
+  .input-box {
+    display: flex;
+    gap: 10px;
+  }
+
+  input {
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid rgb(199, 197, 197);
+    flex-grow: 1;
+  }
+
+  button {
+    padding: 8px;
+    border-radius: 6px;
+    border: none;
+    background-color: #4a62e0;
+    color: white;
+    cursor: pointer;
+  }
+}
+
+.filter-div {
+  display: flex;
+  padding: 0px 20px 16px 20px;
+  gap: 10px;
+  border-bottom: 0.5px solid rgb(192, 192, 192);
+
+  button {
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 4px;
+  }
+}
+
+ul {
+  padding: 20px 16px;
+  display: flex;
+  flex-grow: 1;
+  height: auto;
+  overflow-y: auto;
+  flex-direction: column;
+  border-bottom: 0.5px solid rgb(192, 192, 192);
+  gap: 12px;
+  li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 0.5px solid rgb(199, 197, 197);
+    padding: 16px;
+    border-radius: 6px;
+
+    span {
+      flex-grow: 1;
+    }
+
+    button {
+      background-color: inherit;
+      border: 0;
+      color: red;
+    }
+  }
+}
+
+.footer {
+  margin: 16px 20px;
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  background-color: #f2f6fe;
+  span {
+    font-size: small;
+  }
+  button {
+    padding: 10px;
+    border: 1px solid red;
+    background-color: inherit;
+    color: red;
+    border-radius: 10px;
+  }
+}
+
+.active-filter {
+  background-color: #4a62e0;
+  color: white;
+}
+
+button {
+  cursor: pointer;
+}
