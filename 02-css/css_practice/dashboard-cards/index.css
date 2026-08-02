@@ -1,0 +1,10 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { display: flex; justify-content: center; align-items: center; min-height: 100vh; background-color: #f0f4f8; }
+.container { position: relative; width: 400px; height: 400px; background-color: white; border-radius: 12px; box-shadow: 0 10px 20px rgba(0,0,0,0.1); display: flex; justify-content: center; align-items: center; }
+
+.dash-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; width: 300px; }
+.dash-card { background-color: #ecf0f1; height: 100px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+.dash-card:first-child { background-color: #3498db; }
+.dash-card:nth-child(2) { background-color: #e74c3c; }
+.dash-card:nth-child(3) { background-color: #f1c40f; }
+.dash-card:nth-child(4) { background-color: #2ecc71; }

@@ -1,0 +1,6 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { display: flex; justify-content: center; align-items: center; min-height: 100vh; background-color: #f0f4f8; }
+.container { position: relative; width: 400px; height: 400px; background-color: white; border-radius: 12px; box-shadow: 0 10px 20px rgba(0,0,0,0.1); display: flex; justify-content: center; align-items: center; }
+
+.window-frame { width: 150px; height: 200px; border: 10px solid #8e44ad; background-color: #8e44ad; display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; gap: 8px; }
+.pane { background-color: #3498db; }

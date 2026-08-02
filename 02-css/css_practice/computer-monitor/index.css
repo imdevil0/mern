@@ -1,0 +1,8 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { display: flex; justify-content: center; align-items: center; min-height: 100vh; background-color: #f0f4f8; }
+.container { position: relative; width: 400px; height: 400px; background-color: white; border-radius: 12px; box-shadow: 0 10px 20px rgba(0,0,0,0.1); display: flex; justify-content: center; align-items: center; }
+
+.monitor-wrapper { display: flex; flex-direction: column; align-items: center; }
+.monitor-screen { width: 240px; height: 160px; background-color: #34495e; border: 10px solid #2c3e50; border-radius: 8px; }
+.monitor-stand { width: 30px; height: 50px; background-color: #7f8c8d; }
+.monitor-base { width: 100px; height: 10px; background-color: #95a5a6; border-radius: 5px 5px 0 0; }
